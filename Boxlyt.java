@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class Bdrlyt extends Frame{
+public class Boxlyt extends Frame{
     Button buttons[];
-    Bdrlyt() {
+    Boxlyt() {
         buttons = new Button[5];
         for (int i = 0; i < 5; i++) {
             buttons[i] = new Button("BUTTON" + (i + 1));
@@ -14,6 +14,6 @@ public class Bdrlyt extends Frame{
         setVisible(true);
     }
     public static void main(String[] args){
-        Bdrlyt ob=new Bdrlyt();
+        Boxlyt ob=new Boxlyt();
     }
     }
