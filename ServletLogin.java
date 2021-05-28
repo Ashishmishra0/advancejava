@@ -16,13 +16,13 @@ public class LoginServlet extends HttpServlet {
         String name=request.getParameter("name");  
         String password=request.getParameter("password");  
           
-        if(password.equals("rishabh")){  
+        if(password.equals("alfa")){  
         out.print("Welcome, "+name);  
         HttpSession session=request.getSession();  
         session.setAttribute("name",name);  
         }  
         else{  
-            out.print("Sorry, username or password is incorrect!");  
+            out.print("username or password is incorrect!");  
             request.getRequestDispatcher("login.html").include(request, response);  
         }  
         out.close();  
